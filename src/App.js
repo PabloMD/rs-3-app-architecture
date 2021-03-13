@@ -1,23 +1,49 @@
-import logo from './logo.svg';
+import React from 'react';
+
 import './App.css';
+import { Button, Input, Textarea } from './components/Form';
+import { Section  } from './components/Layout';
+import Card from './components/Card';
+
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { faUser } from '@fortawesome/free-solid-svg-icons';
+import Menu, { MenuLink } from './components/Menu';
+
+library.add(faUser);
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container">
+      <div className="leftBar">
+        <Menu>
+          <MenuLink to="/">Home</MenuLink>
+          <MenuLink to="/about">About</MenuLink>
+          <MenuLink to="/contact" isActive>Contact</MenuLink>
+          <MenuLink to="/posts">Posts</MenuLink>
+        </Menu>
+      </div>
+      <main className="mainContent">
+        <Section header="1. Modyfikowalny button">
+          <Button label="Click me" icon="user" bgColor="alizarin" color="clouds" />
+          <br />
+          <Button label="with defaults" />
+        </Section>
+        <Section header="2. Input i Textarea">
+        <Input label="Click me" bgColor="alizarin" color="clouds" borderSize="2" borderRadius="10"
+        borderColor="carrot" />
+          <br />
+          <Textarea label="Click me" bgColor="alizarin" color="clouds" borderSize="2" borderRadius="12"
+          borderColor="carrot" />
+        </Section>
+        <Section header="4. Komponent Card">
+          <Card imageSrc="https://img.jamieoliver.com/jamieoliver/recipe-database/oldImages/large/1083_1_1433953110.jpg" title="Shrim and Chorizo Paella" intro="This impressive paella is a perfect party dish and a fun meal to cook together with your guests. Add 1 cup of frozen peas along with the mussels, if you like." showMore  content="Method: Heat 1/2 cup of the broth in a pot until simmering, add saffron and set aside for 10 minutes...." />
+        </Section>
+
+        <Section header="6. Lista pracowników">
+
+        </Section>
+        </main>
     </div>
   );
 }

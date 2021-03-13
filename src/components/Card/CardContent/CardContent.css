@@ -1,0 +1,9 @@
+.cardContentIntro{
+    padding: 0.5em;
+    color: darkgray;
+}
+.cardFullContent{
+    color: black;
+    padding: 0.5em;
+    font-size: 1.2em
+}
