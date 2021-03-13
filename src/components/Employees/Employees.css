@@ -1,0 +1,41 @@
+.employees{
+    width: 100%;
+    display: flex;
+}
+.employees > * {
+    padding: 0 0.5em;
+}
+.employeesList{
+    width: 40%;
+}
+.employeesList ul{
+    margin: 0;
+    padding: 0;
+}
+
+.employeesList li{
+    cursor: pointer;
+    list-style: none;
+    padding-bottom: 0.2em;
+}
+
+.employeesDetails{
+    width: 100%;
+}
+.employeesDetails dl{
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 500px;
+}
+.employeesDetails dt{
+    font-weight: bolder;
+    flex: 1 0 30%;
+    max-width: 30%;
+}
+.employeesDetails dd{
+    margin: 0;
+    flex: 1 0 70%;
+    max-width: 70%;
+}

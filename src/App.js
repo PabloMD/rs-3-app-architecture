@@ -8,6 +8,8 @@ import Card from './components/Card';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { faUser } from '@fortawesome/free-solid-svg-icons';
 import Menu, { MenuLink } from './components/Menu';
+import Employees from './components/Employees/Employees';
+import employeesData from './data/employeesData';
 
 library.add(faUser);
 
@@ -41,7 +43,7 @@ function App() {
         </Section>
 
         <Section header="6. Lista pracowników">
-
+          <Employees list={employeesData} />
         </Section>
         </main>
     </div>
