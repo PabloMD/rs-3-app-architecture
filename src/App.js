@@ -1,15 +1,15 @@
 import React from 'react';
 
 import './App.css';
-import { Button, Input, Textarea } from './components/Form';
-import { Section  } from './components/Layout';
-import Card from './components/Card';
+import { Button, Input, Textarea } from 'components/Form';
+import { Section  } from 'components/Layout';
+import Card from 'components/Card';
 
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { faUser } from '@fortawesome/free-solid-svg-icons';
 import Menu, { MenuLink } from './components/Menu';
-import Employees from './components/Employees/Employees';
-import employeesData from './data/employeesData';
+import Employees from 'components/Employees/Employees';
+import employeesData from 'data/employeesData';
 
 library.add(faUser);
 
