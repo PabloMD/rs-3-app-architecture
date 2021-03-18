@@ -1,7 +1,7 @@
 import { ColorPaletteMap } from "../Layout";
 
 
-function Textarea({ label, bgColor = "nephritis", color = "wisteria", borderSize, borderRadius, borderColor}){
+function Textarea({ bgColor = "nephritis", color = "wisteria", borderSize, borderRadius, borderColor}){
     const styles = {
         backgroundColor: ColorPaletteMap[bgColor],
         color: ColorPaletteMap[color],

@@ -27,16 +27,22 @@ function App() {
       </div>
       <main className="mainContent">
         <Section header="1. Modyfikowalny button">
-          <Button label="Click me" icon="user" bgColor="alizarin" color="clouds" />
-          <br />
-          <Button label="with defaults" />
+          <div>
+            <Button label="Click me" icon="user" bgColor="alizarin" color="clouds" />
+          </div>
+          <div>
+            <Button label="with defaults" />
+          </div>
         </Section>
         <Section header="2. Input i Textarea">
-        <Input label="Click me" bgColor="alizarin" color="clouds" borderSize="2" borderRadius="10"
-        borderColor="carrot" />
-          <br />
-          <Textarea label="Click me" bgColor="alizarin" color="clouds" borderSize="2" borderRadius="12"
-          borderColor="carrot" />
+          <div>
+            <Input label="Click me" bgColor="alizarin" color="clouds" borderSize="2" borderRadius="10"
+              borderColor="carrot" />
+          </div>
+          <div>
+            <Textarea label="Click me" bgColor="alizarin" color="clouds" borderSize="2" borderRadius="12"
+            borderColor="carrot" />
+          </div>
         </Section>
         <Section header="4. Komponent Card">
           <Card imageSrc="https://img.jamieoliver.com/jamieoliver/recipe-database/oldImages/large/1083_1_1433953110.jpg" title="Shrim and Chorizo Paella" intro="This impressive paella is a perfect party dish and a fun meal to cook together with your guests. Add 1 cup of frozen peas along with the mussels, if you like." showMore  content="Method: Heat 1/2 cup of the broth in a pot until simmering, add saffron and set aside for 10 minutes...." />

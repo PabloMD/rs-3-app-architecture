@@ -20,19 +20,17 @@ function Employees({ list }){
                     <dd>{employee.position}</dd>
                 </dl>
             );
-        }else{
-            return '<<<< Select Employee';
         }
+
+        return '<<<< Select Employee';
     };
     return(
         <div className="employees">
             <div className="employeesList">
                 <ul>
-                { list.map((el, i) => {
-                    return (
+                { list.map((el, i) => (
                         <li key={i} onClick={ () => pickEmployee(i) }>{`${el.firstName} ${el.lastName}`}</li>
-                        );
-                })}
+                    ))}
                 </ul>
             </div>
             <div className="employeesDetails">
